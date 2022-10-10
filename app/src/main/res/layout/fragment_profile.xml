@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".fragment.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Profile"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_picture_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="150dp"/>
+
+    <TextView
+        android:id="@+id/swButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivUser"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change_language" />
+
+    <TextView
+        android:id="@+id/swButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swButton"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp"
+        android:text="@string/Ganti_Bahasa"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="-145dp"
+        android:text="@string/logout"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/update"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

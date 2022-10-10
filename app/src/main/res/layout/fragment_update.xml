@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".fragment.UpdateFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/update_account"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/username"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/email"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/password"/>
+
+        <EditText
+            android:id="@+id/cfPassword"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/confirm_password"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

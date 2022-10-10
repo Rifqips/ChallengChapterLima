@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.DetailFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/detail_movie"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginVertical="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPoster">
+
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="25sp"
+            android:text="@string/judulFilm" />
+
+        <TextView
+            android:id="@+id/movieReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/movieDate"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/movieLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:text="@string/movieLanguage"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/movieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/rating"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/imgPoster" />
+x
+    <TextView
+        android:id="@+id/detailTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:paddingStart="20dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="18dp"
+        android:text="@string/sinopsis"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailTextTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailTextTitle">
+        <TextView
+            android:id="@+id/detaiLFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailTextTitle"
+            android:layout_marginStart="20dp"
+            android:textAlignment="gravity"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@color/white"
+            android:text="@string/lorem_ipsum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailTextTitle" />
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

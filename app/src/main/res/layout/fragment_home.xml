@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlUser"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:textSize="25sp"
+                android:fontFamily="@font/poppins_medium"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_picture_empty"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlUser"
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:id="@+id/homeProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rlUser"
+        android:layout_alignEnd="@+id/rvFilm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="297dp"
+        android:background="#28858585" />
+
+
+</RelativeLayout>

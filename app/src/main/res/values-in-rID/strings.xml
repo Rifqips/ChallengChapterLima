@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ChallengChapterLima</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="username" translatable="false">Nama User</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="hello" translatable="false">Hello</string>
+    <string name="logout" translatable="false">Keluar</string>
+    <string name="update" translatable="false">Update</string>
+    <string name="update_account" translatable="false">Perbarui Akun</string>
+    <string name="confirm_password" translatable="false">Konfirmasi Akun</string>
+    <string name="judulFilm" translatable="false">judulFilm</string>
+    <string name="movieDate" translatable="false">Tanggal Film</string>
+    <string name="movieLanguage" translatable="false">Bahasa Film</string>
+    <string name="rating" translatable="false">Rating</string>
+    <string name="sinopsis" translatable="false">Sinopsis</string>
+
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis risus ligula, sit amet sagittis magna viverra eget. Nam in erat venenatis, vehicula diam et, molestie lorem. Duis hendrerit rhoncus elit, in congue tellus consectetur vitae. Maecenas ut est non urna vulputate molestie imperdiet nec velit. Curabitur quis euismod arcu. Maecenas at tellus sit amet nulla cursus cursus. Etiam non fermentum ante, ut porta magna. Vivamus elementum pretium luctus. Maecenas consequat lectus non facilisis euismod.</string>
+    <string name="detail_movie" translatable="false">Detail Film</string>
+    <string name="sign_up" translatable="false">Register</string>
+
+    <string name="change_language">Ganti Bahasa</string>
+</resources>
