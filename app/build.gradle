@@ -57,4 +57,9 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.12.0'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //cart
+    testImplementation "io.mockk:mockk:1.13.1"
+
+
 }

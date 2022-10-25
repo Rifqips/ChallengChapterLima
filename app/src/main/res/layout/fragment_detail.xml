@@ -97,7 +97,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/title"
         app:layout_constraintTop_toBottomOf="@+id/imgPoster" />
-x
+
     <TextView
         android:id="@+id/detailTextTitle"
         android:layout_width="match_parent"
